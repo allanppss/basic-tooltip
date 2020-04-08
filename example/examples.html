@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Tooltip</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="../dist/basic-tooltip.js"></script>
+    <link rel="stylesheet" href="../dist/basic-tooltip.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <h1>Exemplo de página com Basic Tooltip</h1>
+
+            <br><br>
+            <h2>Basic Tooltip top</h2>
+            <p>
+                Passe o mouse
+                <strong 
+                    data-bt-align="top" 
+                    data-bt-bg="#f00" 
+                    data-bt-msg="Exemplo de tooltip com alinhamento top"
+                >
+                    aqui
+                </strong>
+            </p>
+
+            <br><br>
+            <h2>Basic Tooltip right</h2>
+            <p>
+                Passe o mouse
+                <strong data-bt-align="right" data-bt-msg="Exemplo de tooltip com alinhamento right">
+                    aqui
+                </strong>
+            </p>
+
+            <br><br>
+            <h2>Basic Tooltip bottom</h2>
+            <p>
+                Passe o mouse
+                <strong data-bt-align="bottom" data-bt-msg="Exemplo de tooltip com alinhamento bottom">
+                    aqui
+                </strong>
+            </p>
+
+            <br><br>
+            <h2>Basic Tooltip left</h2>
+            <p>
+                Passe o mouse
+                <strong data-bt-align="left" data-bt-msg="Exemplo de tooltip com alinhamento left">
+                    aqui
+                </strong>
+            </p>
+        </div>
+    </section>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        strong {
+            color: red;
+        }
+    </style>
+</body>
+
+</html>
