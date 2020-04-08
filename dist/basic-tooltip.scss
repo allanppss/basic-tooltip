@@ -58,15 +58,9 @@ $bgPadrao: rgba(0, 0, 0, 0.9);
     opacity: 0;
     visibility: hidden;
 
-    &::after {
-        content: "";
+    svg {
         position: absolute;
-        top: calc(50% - 4px);
-        left: 50%;
-        margin-left: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: $bgPadrao transparent transparent transparent;
+        fill: $bgPadrao;
     }
 
     &.align-top {
@@ -74,10 +68,9 @@ $bgPadrao: rgba(0, 0, 0, 0.9);
         top: auto;
         bottom: calc(100% - 10px);
 
-        &::after {
-            left: 50%;
-            top: 100%;
-            border-color: $bgPadrao transparent transparent transparent;
+        svg {
+            left: calc(50% - 15px);
+            top: calc(100% - 13px);
         }
     }
 
@@ -85,10 +78,11 @@ $bgPadrao: rgba(0, 0, 0, 0.9);
         left: calc(100% - 10px);
         max-width: 300px;
 
-        &::after {
-            right: 100%;
+        svg {
+            right: calc(100% - 13px);
+            top: calc(50% - 15px);
             left: auto;
-            border-color: transparent $bgPadrao transparent transparent;
+            transform: rotate(90deg);
         }
     }
 
@@ -96,11 +90,11 @@ $bgPadrao: rgba(0, 0, 0, 0.9);
         max-width: 300px;
         top: calc(100% - 10px);
 
-        &::after {
-            left: 50%;
-            bottom: 100%;
+        svg {
+            left: calc(50% - 15px);
+            bottom: calc(100% - 13px);
             top: auto;
-            border-color: transparent transparent $bgPadrao transparent;
+            transform: rotate(180deg);
         }
     }
 
@@ -109,11 +103,12 @@ $bgPadrao: rgba(0, 0, 0, 0.9);
         left: auto;
         max-width: 300px;
 
-        &::after {
-            left: 100%;
+        svg {
+            left: calc(100% - 13px);
             right: auto;
             margin-left: 0;
-            border-color: transparent transparent transparent $bgPadrao;
+            transform: rotate(-90deg);
+            top: calc(50% - 15px);
         }
     }
 

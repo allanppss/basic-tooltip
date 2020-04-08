@@ -50,15 +50,9 @@
   visibility: hidden;
 }
 
-.basic-tooltip::after {
-  content: "";
+.basic-tooltip svg {
   position: absolute;
-  top: calc(50% - 4px);
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.9) transparent transparent transparent;
+  fill: rgba(0, 0, 0, 0.9);
 }
 
 .basic-tooltip.align-top {
@@ -67,10 +61,9 @@
   bottom: calc(100% - 10px);
 }
 
-.basic-tooltip.align-top::after {
-  left: 50%;
-  top: 100%;
-  border-color: rgba(0, 0, 0, 0.9) transparent transparent transparent;
+.basic-tooltip.align-top svg {
+  left: calc(50% - 15px);
+  top: calc(100% - 13px);
 }
 
 .basic-tooltip.align-right {
@@ -78,10 +71,12 @@
   max-width: 300px;
 }
 
-.basic-tooltip.align-right::after {
-  right: 100%;
+.basic-tooltip.align-right svg {
+  right: calc(100% - 13px);
+  top: calc(50% - 15px);
   left: auto;
-  border-color: transparent rgba(0, 0, 0, 0.9) transparent transparent;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .basic-tooltip.align-bottom {
@@ -89,11 +84,12 @@
   top: calc(100% - 10px);
 }
 
-.basic-tooltip.align-bottom::after {
-  left: 50%;
-  bottom: 100%;
+.basic-tooltip.align-bottom svg {
+  left: calc(50% - 15px);
+  bottom: calc(100% - 13px);
   top: auto;
-  border-color: transparent transparent rgba(0, 0, 0, 0.9) transparent;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .basic-tooltip.align-left {
@@ -102,10 +98,12 @@
   max-width: 300px;
 }
 
-.basic-tooltip.align-left::after {
-  left: 100%;
+.basic-tooltip.align-left svg {
+  left: calc(100% - 13px);
   right: auto;
   margin-left: 0;
-  border-color: transparent transparent transparent rgba(0, 0, 0, 0.9);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  top: calc(50% - 15px);
 }
 /*# sourceMappingURL=basic-tooltip.css.map */
