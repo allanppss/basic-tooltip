@@ -56,7 +56,6 @@
 }
 
 .basic-tooltip.align-top {
-  max-width: 300px;
   top: auto;
   bottom: calc(100% - 10px);
 }
@@ -68,7 +67,6 @@
 
 .basic-tooltip.align-right {
   left: calc(100% - 10px);
-  max-width: 300px;
 }
 
 .basic-tooltip.align-right svg {
@@ -80,7 +78,6 @@
 }
 
 .basic-tooltip.align-bottom {
-  max-width: 300px;
   top: calc(100% - 10px);
 }
 
@@ -95,7 +92,6 @@
 .basic-tooltip.align-left {
   right: calc(100% - 10px);
   left: auto;
-  max-width: 300px;
 }
 
 .basic-tooltip.align-left svg {

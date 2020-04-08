@@ -64,7 +64,6 @@ $bgPadrao: rgba(0, 0, 0, 0.9);
     }
 
     &.align-top {
-        max-width: 300px;
         top: auto;
         bottom: calc(100% - 10px);
 
@@ -76,7 +75,6 @@ $bgPadrao: rgba(0, 0, 0, 0.9);
 
     &.align-right {
         left: calc(100% - 10px);
-        max-width: 300px;
 
         svg {
             right: calc(100% - 13px);
@@ -87,7 +85,6 @@ $bgPadrao: rgba(0, 0, 0, 0.9);
     }
 
     &.align-bottom {
-        max-width: 300px;
         top: calc(100% - 10px);
 
         svg {
@@ -101,7 +98,6 @@ $bgPadrao: rgba(0, 0, 0, 0.9);
     &.align-left {
         right: calc(100% - 10px);
         left: auto;
-        max-width: 300px;
 
         svg {
             left: calc(100% - 13px);
